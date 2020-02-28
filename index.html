@@ -6,13 +6,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TNTN39V');</script>
 <!-- End Google Tag Manager -->
-</head>
-<body>
-
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNTN39V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92695850-2"></script>
 <script>
@@ -21,6 +15,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   gtag('js', new Date());
 
   gtag('config', 'UA-92695850-2');
+	
+<script>
+ ga_trackers = [];
+ ga.getAll().forEach(function(x, i) {
+ ga_trackers.push(x.get('name'))
+ })
+ ga_trackers.forEach(function(gaName) {
+ ga(gaName + '.require', 'Clearbit', {
+ "mapping": {
+ "type": "Clearbit IP Traffic Type",
+ "companyName": "Clearbit Company Name",
+ "companyDomain": "Clearbit Domain Name",
+ "companyIndustry": "Clearbit Industry",
+ "companySubIndustry": "Clearbit Sub Industry",
+ "companyEmployeesRange": "Clearbit Employee Range",
+ "companyEstimatedAnnualRevenue": "Clearbit Estimated Revenue Range",
+ "companyAlexaRank": "Clearbit Global Alexa Rank",
+ "companyCity": "Clearbit HQ City",
+ "companyState": "Clearbit HQ State",
+ "companyCountry": "Clearbit HQ Country",
+ "companySicCode": "Clearbit SIC Code"
+ }})
+ })
+</script>
+
+<script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_31b55922cb332187c23c75b3d09bb94e">
+</script>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNTN39V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 </script>
 
 </body>
